@@ -1,0 +1,9 @@
+{
+  "scripts": {
+   "predeploy": "flutter build web",
+   "deploy": "gh-pages -d build/web"
+},
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
