@@ -1,0 +1,31 @@
+name: portflolio
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  animate_do: ^3.3.4
+  animated_text_kit: ^4.2.2
+  dio: null
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.2.1
+  http: ^1.2.2
+  mailer: ^6.1.2
+  path_provider: null
+  permission_handler: null
+  scrollable_positioned_list: null
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
