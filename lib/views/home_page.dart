@@ -193,38 +193,15 @@ class _HomePageState extends State<HomePage> {
     }
   }
 
-/*   Future<void> downloadCV() async {
-    final Dio dio = Dio();
-    try {
-      // Request storage permission (Android only)
-      if (Platform.isAndroid) {
-        await requestPermission();
-      }
 
-      // Get the app's document directory
-      final directory = await getApplicationDocumentsDirectory();
-      final filePath = '${directory.path}/cv.pdf';
-
-      // Download the PDF
-      await dio.download(
-        'https://bit.ly/3SPBF11', // URL of the CV PDF
-        filePath,
-      );
-
-      // Notify the user
-      print('Downloaded to $filePath');
-    } catch (e) {
-      print('Error: $e');
-    }
-  } */
 
   Future<void> downloadCV() async {
   final Dio dio = Dio();
+      const url = 'https://shortlink.uk/1rJMz';
 
   try {
     if (kIsWeb) {
       // Handle web download
-      const url = 'https://bit.ly/3SPBF11';
       if (await canLaunchUrl(Uri.parse(url))) {
         await launchUrl(Uri.parse(url));
       } else {
@@ -242,17 +219,21 @@ class _HomePageState extends State<HomePage> {
 
       // Download the PDF
       await dio.download(
-        'https://bit.ly/3SPBF11', // URL of the CV PDF
+        url, // URL of the CV PDF
         filePath,
       );
 
       // Notify the user
-      print('Downloaded to $filePath');
+      if (kDebugMode) {
+        print('Downloaded to $filePath');
+      }
     } else {
       throw 'Unsupported platform';
     }
   } catch (e) {
-    print('Error: $e');
+    if (kDebugMode) {
+      print('Error: $e');
+    }
   }
 }
 
