@@ -53,7 +53,7 @@ Collaborated within a multidisciplinary team to develop a medical clinic applica
 Developed a media streaming Flutter application with audio playback and offline local storage using Hive. Implemented Provider state management and optimized application performance to ensure a smooth and responsive user experience.
 ''',
     image: 'assets/images/onshoda.png',
-    link: 'https://github.com/AhmedTalat99/onshoda.git',
+    link: 'https://github.com/AhmedTalat99/onshoda.git',//
 
   ),
 
