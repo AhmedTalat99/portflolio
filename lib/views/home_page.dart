@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:animate_do/animate_do.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:dio/dio.dart';
@@ -197,7 +195,7 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> downloadCV() async {
   final Dio dio = Dio();
-      const url = 'https://shortlink.uk/1rJMz';
+      const url = 'https://shortlink.uk/1uRSF';
 
   try {
     if (kIsWeb) {

@@ -5,7 +5,6 @@ import 'package:portflolio/globals/app_colors.dart';
 import 'package:portflolio/globals/app_text_styles.dart';
 import 'package:portflolio/globals/constants.dart';
 
-import '../globals/app_buttons.dart';
 import '../helper/helper_class.dart';
 
 class AboutMe extends StatelessWidget {

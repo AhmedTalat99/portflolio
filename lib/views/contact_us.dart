@@ -1,5 +1,3 @@
-import 'dart:js_interop';
-
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:mailer/mailer.dart';
