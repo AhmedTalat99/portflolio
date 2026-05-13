@@ -41,7 +41,7 @@ class _MainDashBoardState extends State<MainDashBoard> {
     const AboutMe(),
     //  const MyServices(),
     const Projects(),
-    const ContactUs(),
+   // const ContactUs(),
     // const FooterClass(),
   ];
 

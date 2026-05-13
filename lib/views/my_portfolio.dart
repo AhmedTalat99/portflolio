@@ -18,49 +18,53 @@ class Projects extends StatefulWidget {
 
 class _ProjectsState extends State<Projects> {
   final onH0verEffect = Matrix4.identity()..scale(1.0);
-  List<Project> projects = [
-    Project(
-      name: 'Medical Clinic',
-      details:
-          '• Collaborated on the design and development of a comprehensive medical clinic application, focusing on user-friendly interfaces and efficient functionality.',
-      image: 'assets/images/medical.png',
-      link: 'https://github.com/AhmedTalat99/medicalclinic_team13',
-    ),
-    Project(
-      name: 'Autikid',
-      details: '''
-Developed an educational app for autistic children using Dart and Flutter, integrated with a Visual Question Answering (VQA) model to assist in improving their abilities.
+ List<Project> projects = [
+  Project(
+    name: 'Smart Budget',
+    details: '''
+Built a full-stack Flutter application using Clean Architecture and Bloc state management. Integrated Supabase APIs with secure authentication, real-time synchronization, and responsive UI design. Focused on scalability, performance optimization, and clean code practices.
 ''',
-      image: 'assets/images/autikid.png',
-      link:
-          'https://github.com/VqaGraduationTeam/graduation_project_flutter.git',
-    ),
-    Project(
-      name: 'Dashboard',
-      details: '''
-Developed a cross-platform app for smartphones, tablets, and desktops with a responsive design using Flutter to ensure a smooth and consistent user experience
-''',
-      image: 'assets/images/dashboard.png',
-      link: 'https://github.com/AhmedTalat99/responsive_dash_board.git',
-    ),
-    Project(
-      name: 'Services',
-      details: '''
-Developed a shopping app that displays various services for customers, featuring API integration for data fetching and English-Arabic language 
-''',
-      image: 'assets/images/services.png',
-      link: 'https://github.com/AhmedTalat99/services.git',
-    ),
-    Project(
-      name: 'Notes',
-      details: '''
-     I created a notes app that stores and edits notes locally using Hive for local storage and Cubit for efficient state management.
-''',
-      image: 'assets/images/notes.jpeg',
-      link: 'https://github.com/AhmedTalat99/Notes.git',
-    ),
-  ];
+    image: 'assets/images/smart_budget.png',
+    link: 'https://github.com/AhmedTalat99',
+  ),
 
+  Project(
+    name: 'Autikid',
+    details: '''
+Developed an AI-powered educational Flutter application for autistic children by integrating a Visual Question Answering (VQA) model with external APIs. Implemented Cubit state management and focused on accessibility, responsive UI, and smooth user experience.
+''',
+    image: 'assets/images/autikid.png',
+    link:
+        'https://github.com/VqaGraduationTeam/graduation_project_flutter.git',
+  ),
+
+  Project(
+    name: 'Medical Clinic',
+    details: '''
+Collaborated within a multidisciplinary team to develop a medical clinic application using Flutter. Focused on responsive UI implementation, clean architecture principles, API integration, and improving overall usability and performance.
+''',
+    image: 'assets/images/medical.png',
+    link: 'https://github.com/AhmedTalat99/medicalclinic_team13',
+  ),
+
+  Project(
+    name: 'OnShoda',
+    details: '''
+Developed a media streaming Flutter application with audio playback and offline local storage using Hive. Implemented Provider state management and optimized application performance to ensure a smooth and responsive user experience.
+''',
+    image: 'assets/images/onshoda.png',
+    link: 'https://github.com/AhmedTalat99',
+  ),
+
+  Project(
+    name: 'Dashboard',
+    details: '''
+Developed a responsive cross-platform Flutter dashboard supporting mobile, tablet, and desktop devices. Built reusable UI components and optimized performance to ensure a smooth and consistent user experience across different screen sizes.
+''',
+    image: 'assets/images/dashboard.png',
+    link: 'https://github.com/AhmedTalat99/responsive_dash_board.git',
+  ),
+];
 /*   List images = <String>[
     AppAssets.work1,
     AppAssets.work2,
@@ -158,10 +162,10 @@ Developed a shopping app that displays various services for customers, featuring
                         borderRadius: BorderRadius.circular(20),
                         gradient: LinearGradient(
                             colors: [
-                              AppColors.themeColor.withOpacity(1.0),
-                              AppColors.themeColor.withOpacity(0.9),
-                              AppColors.themeColor.withOpacity(0.8),
-                              AppColors.themeColor.withOpacity(0.6),
+                              AppColors.themeColor.withValues(alpha: 1.0),
+                              AppColors.themeColor.withValues(alpha: 0.9),
+                              AppColors.themeColor.withValues(alpha: 0.8),
+                              AppColors.themeColor.withValues(alpha: 0.6),
                             ],
                             begin: Alignment.bottomCenter,
                             end: Alignment.topCenter),

@@ -13,11 +13,11 @@ dependencies:
   dio: null
   flutter:
     sdk: flutter
-  google_fonts: ^6.2.1
+  google_fonts: ^7.0.0
   http: ^1.2.2
   mailer: ^6.1.2
   path_provider: null
-  permission_handler: null
+  permission_handler: any
   scrollable_positioned_list: null
   url_launcher: ^6.3.0
 
