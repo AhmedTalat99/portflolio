@@ -25,7 +25,7 @@ class _ProjectsState extends State<Projects> {
 Built a full-stack Flutter application using Clean Architecture and Bloc state management. Integrated Supabase APIs with secure authentication, real-time synchronization, and responsive UI design. Focused on scalability, performance optimization, and clean code practices.
 ''',
     image: 'assets/images/smart_budget.png',
-    link: 'https://github.com/AhmedTalat99',
+    link: 'https://github.com/AhmedTalat99/smart_budget.git',
   ),
 
   Project(
@@ -53,7 +53,7 @@ Collaborated within a multidisciplinary team to develop a medical clinic applica
 Developed a media streaming Flutter application with audio playback and offline local storage using Hive. Implemented Provider state management and optimized application performance to ensure a smooth and responsive user experience.
 ''',
     image: 'assets/images/onshoda.png',
-    link: 'https://github.com/AhmedTalat99',
+    link: 'https://github.com/AhmedTalat99/onshoda.git',
   ),
 
   Project(

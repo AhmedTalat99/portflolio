@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portflolio/views/about_me.dart';
 import 'package:portflolio/views/home_page.dart';
-import 'package:portflolio/views/my_portfolio.dart';
+import 'package:portflolio/views/projects.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 import '../globals/app_colors.dart';
