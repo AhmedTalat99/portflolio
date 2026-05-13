@@ -54,6 +54,7 @@ Developed a media streaming Flutter application with audio playback and offline 
 ''',
     image: 'assets/images/onshoda.png',
     link: 'https://github.com/AhmedTalat99/onshoda.git',
+    
   ),
 
   Project(
