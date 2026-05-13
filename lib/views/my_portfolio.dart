@@ -18,7 +18,7 @@ class Projects extends StatefulWidget {
 
 class _ProjectsState extends State<Projects> {
   final onH0verEffect = Matrix4.identity()..scale(1.0);
- List<Project> projects = [
+ List<Project> projectsList = [
   Project(
     name: 'Smart Budget',
     details: '''
@@ -111,7 +111,7 @@ Developed a responsive cross-platform Flutter dashboard supporting mobile, table
 
   GridView buildProjectGridView({required int crossAxisCount}) {
     return GridView.builder(
-      itemCount: projects.length,
+      itemCount: projectsList.length,
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -142,7 +142,7 @@ Developed a responsive cross-platform Flutter dashboard supporting mobile, table
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     image: DecorationImage(
-                        image: AssetImage(projects[index].image),
+                        image: AssetImage(projectsList[index].image),
                         fit: BoxFit.fill),
                   ),
                 ),
@@ -150,7 +150,7 @@ Developed a responsive cross-platform Flutter dashboard supporting mobile, table
                   visible: index == hoveredIndex,
                   child: GestureDetector(
                     onTap: () {
-                      launchLink(projects[index].link);
+                      launchLink(projectsList[index].link);
                     },
                     child: AnimatedContainer(
                       duration: const Duration(milliseconds: 600),
@@ -173,13 +173,13 @@ Developed a responsive cross-platform Flutter dashboard supporting mobile, table
                       child: Column(
                         children: [
                           Text(
-                            projects[index].name,
+                            projectsList[index].name,
                             style: AppTextStyles.montserratStyle(
                                 color: Colors.black87, fontSize: 20),
                           ),
                           Constants.sizedBox(height: 15.0),
                           Text(
-                            projects[index].details,
+                            projectsList[index].details,
                             style: AppTextStyles.normalStyle(
                                 color: Colors.black87),
                             textAlign: TextAlign.center,
