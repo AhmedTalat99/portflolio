@@ -28,8 +28,8 @@ class _MainDashBoardState extends State<MainDashBoard> {
   final menuItems = <String>[
     'Home',
     'About',
-    'Projects',
     'Experience',
+    'Projects',
   ];
 
   var menuIndex = 0;
@@ -38,8 +38,8 @@ class _MainDashBoardState extends State<MainDashBoard> {
   final screensList = <Widget>[
     const HomePage(),
     const AboutMe(),
+    Experience(),
     const Projects(),
-     Experience(),
   ];
 
   Future scrollTo({required int index}) async {
@@ -170,7 +170,8 @@ class _MainDashBoardState extends State<MainDashBoard> {
   AnimatedContainer buildNavBarAnimatedContainer(int index, bool hover) {
     return AnimatedContainer(
       alignment: Alignment.center,
-      width: hover ? 80 : 75,
+      padding: const EdgeInsets.symmetric(
+          horizontal: 8), // ← padding instead of fixed width
       duration: const Duration(milliseconds: 200),
       transform: hover ? onMenuHover : null,
       child: Text(

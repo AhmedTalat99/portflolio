@@ -63,9 +63,11 @@ final List<ExperienceModel> experiences = [
       ),
     );
   }
+Widget buildTimelineItem(ExperienceModel exp, int index) {
+  final bool isLast = index == experiences.length - 1;
 
-  Widget buildTimelineItem(ExperienceModel exp, int index) {
-    return Row(
+  return IntrinsicHeight(   // ← fixes the line height to match card height
+    child: Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         // Timeline line
@@ -79,11 +81,12 @@ final List<ExperienceModel> experiences = [
                 shape: BoxShape.circle,
               ),
             ),
-            if (index != experiences.length - 1)
-              Container(
-                width: 2,
-                height: 100,
-                color: Colors.blue,
+            if (!isLast)
+              Expanded(          // ← stretches to card height, not fixed 100
+                child: Container(
+                  width: 2,
+                  color: Colors.blue,
+                ),
               ),
           ],
         ),
@@ -139,6 +142,6 @@ final List<ExperienceModel> experiences = [
           ),
         ),
       ],
-    );
-  }
-}
+    ),
+  );
+}}
