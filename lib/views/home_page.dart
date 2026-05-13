@@ -124,7 +124,7 @@ class _HomePageState extends State<HomePage> {
                   onTap: () {
                     if (socialBI == 0) {
                       // LinkedIn
-                      launchLink('www.linkedin.com/in/ahmed-talat-41243b3bb');
+                      launchLink('https://shorturl.at/I7S1u');
                     } else if (socialBI == 1) {
                       launchLink('https://github.com/AhmedTalat99');
                     } else if (socialBI == 2) {
